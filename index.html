@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jibas El Sabroso | Sabor a la Parrilla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#inicio" class="brand">
+    <div class="brand-icon">
+        <svg viewBox="0 0 32 40" fill="none">
+            <path d="M17 2 C20 10 29 13 28 23 C27 32 21 37 15 37 C7 37 3 31 4 23 C5 17 11 12 12 7 C15 12 16 15 16 19 C20 15 19 9 17 2Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="brand-text">
+        <span class="brand-title">JIBAS</span>
+        <span class="brand-sub">EL SABROSO</span>
+    </div>
+</a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#inicio">Inicio</a>
+                <a href="#menu">Menú</a>
+                <a href="#bebidas">Bebidas</a>
+                <a href="#nosotros">Nosotros</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contacto" class="btn btn-primary btn-sm">
+                    Hacer pedido <span class="arrow">→</span>
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+            </div>
+        </div>
+    </header>
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-badge-logo">
+                <img src="img/Logo_del_local.jpg" alt="Jibas El Sabroso">
+            </div>
+            <p class="eyebrow">SABOR A LA PARRILLA</p>
+            <h1 class="hero-title">
+                Momentos que<br>
+                saben <span class="text-orange italic">mejor juntos.</span>
+            </h1>
+            <p class="hero-desc">
+                Parrilladas, brochetas y bebidas para compartir en familia o con tu grupo de amigos.
+            </p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">
+                    Explorar menú <span class="arrow">→</span>
+                </a>
+                <a href="#bebidas" class="btn-link">
+                    Ver bebidas <span class="arrow">→</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-tag-bottom">
+            <span class="tag-num">01</span>
+            <span>Fuego, sabor y buenos momentos</span>
+        </div>
+    </section>
+    <section id="nosotros" class="about-section">
+        <div class="container about-grid">
+            <div class="about-image-wrapper">
+                <div class="about-frame"></div>
+                <img src="img/Publicidad.jpg" alt="Jibas El Sabroso - Av. Murillo #110" class="about-img">
+                <div class="location-badge">
+                    <span class="eyebrow-dark">DESDE EL CORAZÓN DE LA CIUDAD</span>
+                </div>
+            </div>
+            <div class="about-info">
+                <p class="eyebrow">LA MESA ES DE TODOS</p>
+                <h2 class="section-title">
+                    Una experiencia<br>
+                    llena de <span class="text-orange italic">sabor.</span>
+                </h2>
+                <p class="about-text">
+                    En Jibas celebramos la buena comida y la mejor compañía. Cocinamos a la brasa, servimos porciones generosas y preparamos cada mesa para que nadie se quede fuera.
+                </p>
+                <blockquote class="about-quote">
+                    Buena comida, algo frío para tomar y tiempo para compartir.
+                </blockquote>
+                <a href="#menu" class="btn-link text-orange-link">
+                    Descubre nuestro menú <span class="arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="menu-header">
+                <p class="eyebrow">DIRECTO DE LA PARRILLA</p>
+                <h2 class="section-title">
+                    Nuestro <span class="text-orange italic">menú</span>
+                </h2>
+                <p class="menu-subtitle">
+                    Platos y bebidas con precios claros para elegir todo en un mismo lugar.
+                </p>
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="parrilla">Parrilla</button>
+                    <button class="filter-btn" data-filter="brochetas">Brochetas</button>
+                    <button class="filter-btn" data-filter="compartir">Para compartir</button>
+                    <button class="filter-btn" data-filter="bebidas">Bebidas</button>
+                </div>
+            </div>
+            <div class="menu-grid" id="bebidas">
+                <article class="menu-card" data-category="compartir">
+                    <div class="card-img-box">
+                        <span class="card-num">01</span>
+                        <img src="img/Parrillada jibas.jpg" alt="Parrillada Jibas">
+                        <span class="card-badge">IDEAL PARA 4</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">PARA COMPARTIR</span>
+                        <div class="card-title-row">
+                            <h3>Parrillada Jibas</h3>
+                            <span class="price">Bs 60</span>
+                        </div>
+                        <p class="card-desc">Res, cerdo, pollo, longaniza, yuca frita y vegetales a la brasa.</p>
+                        <button class="card-action" onclick="agregarPedido('Parrillada Jibas', 'Bs 280')">
+                            <span>Agregar al pedido</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="parrilla">
+                    <div class="card-img-box">
+                        <span class="card-num">02</span>
+                        <img src="img/Costillas al fuego.jpg" alt="Costillas al fuego">
+                        <span class="card-badge">FAVORITO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">PARRILLA</span>
+                        <div class="card-title-row">
+                            <h3>Costillas al fuego</h3>
+                            <span class="price">RD$ 895</span>
+                        </div>
+                        <p class="card-desc">Costillas de cerdo glaseadas, papas rústicas y ensalada fresca.</p>
+                        <button class="card-action" onclick="agregarPedido('Costillas al fuego', 'Bs 105')">
+                            <span>Agregar al pedido</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="brochetas">
+                    <div class="card-img-box">
+                        <span class="card-num">03</span>
+                        <img src="img/Brocheta de pollo.jpg" alt="Brochetas de pollo">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">BROCHETAS</span>
+                        <div class="card-title-row">
+                            <h3>Brochetas de pollo</h3>
+                            <span class="price">Bs 25</span>
+                        </div>
+                        <p class="card-desc">Pollo marinado, pimientos asados, cebolla y pan de la casa.</p>
+                        <button class="card-action" onclick="agregarPedido('Brochetas de pollo', 'Bs 65')">
+                            <span>Agregar al pedido</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="parrilla">
+                    <div class="card-img-box">
+                        <span class="card-num">04</span>
+                        <img src="img/Churrasco casa.jpg" alt="Churrasco de la casa">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">PARRILLA</span>
+                        <div class="card-title-row">
+                            <h3>Churrasco de la casa</h3>
+                            <span class="price">Bs 220</span>
+                        </div>
+                        <p class="card-desc">Corte jugoso a la parrilla con chimichurri y papas salteadas.</p>
+                        <button class="card-action" onclick="agregarPedido('Churrasco de la casa', 'Bs 130')">
+                            <span>Agregar al pedido</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="brochetas">
+                    <div class="card-img-box">
+                        <span class="card-num">05</span>
+                        <img src="img/Anticucho mixto.jpg" alt="Anticuchos mixtos">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">BROCHETAS</span>
+                        <div class="card-title-row">
+                            <h3>Anticuchos mixtos</h3>
+                            <span class="price">Bs 125</span>
+                        </div>
+                        <p class="card-desc">Selección de res y pollo con vegetales y salsa criolla.</p>
+                        <button class="card-action" onclick="agregarPedido('Anticuchos mixtos', 'Bs 75')">
+                            <span>Agregar al pedido</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="compartir">
+                    <div class="card-img-box">
+                        <span class="card-num">06</span>
+                        <img src="img/Tabla amistad.jpg" alt="Tabla de la amistad">
+                        <span class="card-badge">IDEAL PARA 3</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">PARA COMPARTIR</span>
+                        <div class="card-title-row">
+                            <h3>Tabla de la amistad</h3>
+                            <span class="price">Bs 335</span>
+                        </div>
+                        <p class="card-desc">Carnes a la brasa, chorizo, mazorca, papas y tres salsas.</p>
+                        <button class="card-action" onclick="agregarPedido('Tabla de la amistad', 'Bs 210')">
+                            <span>Agregar al pedido</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="bebidas">
+                    <div class="card-img-box">
+                        <span class="card-num">07</span>
+                        <img src="img/Vino casa Kol.jpg" alt="Vino tinto de la casa">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">VINOS</span>
+                        <div class="card-title-row">
+                            <h3>Vino tinto de la casa</h3>
+                            <span class="price">Bs 180</span>
+                        </div>
+                         <h3>(Kolvert)</h3>
+                        <p class="card-desc">Botella 750 ml suave, frutal y perfecto para carnes.</p>
+                        <button class="card-action" onclick="agregarPedido('Vino tinto de la casa', 'Bs 140')">
+                            <span>Agregar al pedido</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="bebidas">
+                    <div class="card-img-box">
+                        <span class="card-num">08</span>
+                        <img src="img/Copa.jpg" alt="Copa de vino tinto">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">VINOS</span>
+                        <div class="card-title-row">
+                            <h3>Copa de vino tinto</h3>
+                            <span class="price">Bs 30</span>
+                        </div>
+                        <p class="card-desc">Copa 5 oz selección de la casa.</p>
+                        <button class="card-action" onclick="agregarPedido('Copa de vino tinto', 'Bs 40')">
+                            <span>Agregar al pedido</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="bebidas">
+                    <div class="card-img-box">
+                        <span class="card-num">09</span>
+                        <img src="img/Gaseosa fam.jpg" alt="Gaseosa familiar">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">GASEOSAS</span>
+                        <div class="card-title-row">
+                            <h3>Gaseosa familiar</h3>
+                            <span class="price">Bs 22</span>
+                        </div>
+                        <p class="card-desc">Botella 2 litros sabores variados.</p>
+                        <button class="card-action" onclick="agregarPedido('Gaseosa familiar', 'Bs 25')">
+                            <span>Agregar al pedido</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="bebidas">
+                    <div class="card-img-box">
+                        <span class="card-num">10</span>
+                        <img src="img/Refres per.jpg" alt="Refresco personal">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">GASEOSAS</span>
+                        <div class="card-title-row">
+                            <h3>Refresco personal</h3>
+                            <span class="price">Bs 3</span>
+                        </div>
+                        <p class="card-desc">Botella fría 12 oz sabores variados.</p>
+                        <button class="card-action" onclick="agregarPedido('Refresco personal', 'Bs 10')">
+                            <span>Agregar al pedido</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="bebidas">
+                    <div class="card-img-box">
+                        <span class="card-num">11</span>
+                        <img src="img/Jug natu.jpg" alt="Jugo natural">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">JUGOS</span>
+                        <div class="card-title-row">
+                            <h3>Jugo natural</h3>
+                            <span class="price">Bs 10</span>
+                        </div>
+                        <p class="card-desc">Naranja, maracuyá o limón - 16 oz.</p>
+                        <button class="card-action" onclick="agregarPedido('Jugo natural', 'Bs 18')">
+                            <span>Agregar al pedido</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="menu-card" data-category="bebidas">
+                    <div class="card-img-box">
+                        <span class="card-num">12</span>
+                        <img src="img/Jarra ju.jpg" alt="Jarra de jugo">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-cat">JUGOS</span>
+                        <div class="card-title-row">
+                            <h3>Jarra de jugo</h3>
+                            <span class="price">RD$ 675</span>
+                        </div>
+                        <p class="card-desc">Jarra para compartir - rinde 5 vasos.</p>
+                        <button class="card-action" onclick="agregarPedido('Jarra de jugo', 'Bs 65')">
+                            <span>Agregar al pedido</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="orange-banner">
+        <div class="container orange-banner-grid">
+            <div class="orange-left">
+                <span class="eyebrow-white">HECHO PARA COMPARTIR</span>
+                <h2>Donde comen dos,<br><span class="italic">celebran todos.</span></h2>
+            </div>
+            <div class="orange-right">
+                <div class="persons-stat">
+                    <div class="persons-nums">
+                        <span>3</span>
+                        <span class="dash">—</span>
+                        <span>5</span>
+                    </div>
+                    <span class="persons-label">PERSONAS</span>
+                </div>
+                <p class="orange-desc">
+                    Pide una de nuestras tablas, agrega una jarra y convierte cualquier día en un buen momento.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="contacto" class="cta-section">
+        <div class="cta-overlay"></div>
+        <div class="container cta-grid">
+            <div class="cta-left">
+                <p class="eyebrow">¿YA SE TE ANTOJÓ?</p>
+                <h2 class="section-title">
+                    Tu próximo buen<br>
+                    momento comienza<br>
+                    con <span class="text-orange italic">Jibas.</span>
+                </h2>
+            </div>
+            <div class="cta-card">
+                <p class="eyebrow">PEDIDOS Y CONSULTAS</p>
+                <h3>Estamos listos para atenderte.</h3>
+                <p>Escríbenos para confirmar precios, disponibilidad y coordinar tu pedido.</p>
+                <a href="https://wa.me/59170000000?text=Hola%20Jibas%20El%20Sabroso,%20quisiera%20hacer%20un%20pedido" target="_blank" class="btn btn-white-full">
+                    <span>Pedir por WhatsApp</span>
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="img/Logo toro.jpg" alt="Logo Jibas" class="footer-logo">
+                <span>JIBAS</span>
+            </div>
+            <p class="footer-center">Parrilla, familia y buenos momentos.</p>
+            <p class="footer-copy">© 2026 Jibas El Sabroso</p>
+        </div>
+    </footer>
+    <div id="toast" class="toast"></div>
+    <script src="js/main.js"></script>
+</body>
+</html>
